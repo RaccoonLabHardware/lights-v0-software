@@ -1,4 +1,4 @@
-# RaccoonLab lights-v0 node
+# RaccoonLab UAV LIGHTS v2 node
 
 This is a repository for RaccoonLab lights v2 node.
 
