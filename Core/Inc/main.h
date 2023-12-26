@@ -60,14 +60,22 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ADC_VIN_Pin GPIO_PIN_1
+#define ADC_VIN_Pin GPIO_PIN_0
 #define ADC_VIN_GPIO_Port GPIOA
+#define ADC_5V_Pin GPIO_PIN_1
+#define ADC_5V_GPIO_Port GPIOA
 #define WS2812B_RGB_LED_Pin GPIO_PIN_2
 #define WS2812B_RGB_LED_GPIO_Port GPIOA
-#define ADC_5V_Pin GPIO_PIN_5
-#define ADC_5V_GPIO_Port GPIOA
-#define INTERNAL_LED_Pin GPIO_PIN_8
-#define INTERNAL_LED_GPIO_Port GPIOA
+#define INT_RGB_LED_BLUE_Pin GPIO_PIN_4
+#define INT_RGB_LED_BLUE_GPIO_Port GPIOA
+#define ADC_5VA5_Pin GPIO_PIN_5
+#define ADC_5VA5_GPIO_Port GPIOA
+#define ADC_VERSION_Pin GPIO_PIN_1
+#define ADC_VERSION_GPIO_Port GPIOB
+#define INT_RGB_LED_GREEN_Pin GPIO_PIN_8
+#define INT_RGB_LED_GREEN_GPIO_Port GPIOA
+#define INT_RGB_LED_RED_Pin GPIO_PIN_15
+#define INT_RGB_LED_RED_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
