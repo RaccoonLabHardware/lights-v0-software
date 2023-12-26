@@ -106,10 +106,9 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     /**ADC1 GPIO Configuration
     PA0-WKUP     ------> ADC1_IN0
     PA1     ------> ADC1_IN1
-    PA5     ------> ADC1_IN5
     PB1     ------> ADC1_IN9
     */
-    GPIO_InitStruct.Pin = ADC_VIN_Pin|ADC_5V_Pin|ADC_5VA5_Pin;
+    GPIO_InitStruct.Pin = ADC_VIN_Pin|ADC_5V_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -143,10 +142,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     /**ADC1 GPIO Configuration
     PA0-WKUP     ------> ADC1_IN0
     PA1     ------> ADC1_IN1
-    PA5     ------> ADC1_IN5
     PB1     ------> ADC1_IN9
     */
-    HAL_GPIO_DeInit(GPIOA, ADC_VIN_Pin|ADC_5V_Pin|ADC_5VA5_Pin);
+    HAL_GPIO_DeInit(GPIOA, ADC_VIN_Pin|ADC_5V_Pin);
 
     HAL_GPIO_DeInit(ADC_VERSION_GPIO_Port, ADC_VERSION_Pin);
 
