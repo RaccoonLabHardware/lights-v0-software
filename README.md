@@ -1,6 +1,6 @@
 # RaccoonLab lights-v0 node
 
-This is a template repository for RaccoonLab lights v0 node.
+This is a repository for RaccoonLab lights v2 node.
 
 The core of this repository is the .ioc file that defines the stm32 peripherals with respect to what a real device has.
 
