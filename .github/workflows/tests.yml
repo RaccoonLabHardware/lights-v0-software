@@ -1,0 +1,20 @@
+name: pinout check
+
+on: [push]
+
+jobs:
+  pinout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Checkout pcb-versions
+        uses: actions/checkout@v3
+        with:
+          repository: RaccoonLabHardware/pcb-versions
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: pcb-versions
+
+      - name: Test pinout
+        run: |
+          ./pcb-versions/scripts/test_ioc.py pcb-versions/configs/required_pinout_v2.yml *.ioc
